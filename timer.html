@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: skyblue;
+        }
+        #display {
+            font-size: 48px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: white;
+            border: 1px solid;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .timer-controls {
+            margin: 10px 0;
+        }
+        .timer-controls input {
+            font-size: 16px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 80px;
+        }
+        .timer-controls button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+        }
+        .timer-controls button:hover {
+            background-color: white;
+        }
+        .link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="display">00:00:00:00</div>
+    <div class="timer-controls">
+        <input type="number" id="hoursInput" placeholder="Hours" min="0">
+        <input type="number" id="minutesInput" placeholder="Minutes" min="0">
+        <input type="number" id="secondsInput" placeholder="Seconds" min="0">
+        <br>
+        <button onclick="startTimer()">Start Timer</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <div class="link">
+        <a href="index.html">Stopwatch</a>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>
